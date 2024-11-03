@@ -110,3 +110,12 @@ basicNN + geom_point() + ggtitle("SIMS~GRIP")+ theme(plot.title = element_text(h
 basicNN <- ggplot(data,aes(y=SIMS,x=GRIP))
 ```
 
+### Numerical Results
+
+```{r}
+cor(SIMS~ARM,data=data)
+cor(SIMS~GRIP,data=data)
+cor(SIMS~ARM+GRIP,data=data)
+```
+The value is higher than the other 2 models. Model 3 has a very high positive correlation.
+
